@@ -11,7 +11,9 @@
 
 (deffacts startup
    (state-list))
+
 ----------------------------------------------------
+
 (defrule system-start ""
   =>
   (assert (UI-state (display welcomeMessage)
@@ -208,7 +210,9 @@
    (assert (UI-state (display UndeadQuestion)
                      (valid-answers Yes No)
                      (fact-name undead))))
+
 ---------------------------------------------------------
+
 (defrule response-nintendo-franchise-yes ""
   (nintendo-franchise Yes)
   =>
