@@ -1,7 +1,3 @@
-;;; ***************************
-;;; * DEFTEMPLATES & DEFFACTS *
-;;; ***************************
-
 (deftemplate UI-state
    (slot display (default none))
    (slot fact-name (default none))
@@ -15,11 +11,7 @@
 
 (deffacts startup
    (state-list))
-
-;;;***************
-;;;* QUERY RULES *
-;;;***************
-
+----------------------------------------------------
 (defrule system-start ""
   =>
   (assert (UI-state (display welcomeMessage)
@@ -216,12 +208,7 @@
    (assert (UI-state (display UndeadQuestion)
                      (valid-answers Yes No)
                      (fact-name undead))))
-
-
-;;;****************
-;;;* RESULT RULES *
-;;;****************
-
+---------------------------------------------------------
 (defrule response-nintendo-franchise-yes ""
   (nintendo-franchise Yes)
   =>
