@@ -379,13 +379,13 @@
             (state final))))
 
 (defrule response-awesome-yes ""
-  (awesome Yes)
+  (awesome-way Yes)
   =>
   (assert (UI-state (display property-awesome-yes)
             (state final))))
 
 (defrule response-awesome-no ""
-  (awesome No)
+  (awesome-way No)
   =>
   (assert (UI-state (display property-awesome-no)
             (state final))))
