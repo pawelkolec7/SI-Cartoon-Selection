@@ -3,7 +3,7 @@ import clips
 import configparser
 
 
-class GiftGuideApp:
+class CartoonSelection:
     def __init__(self, master):
         self.master = master
         self.master.title("SI-Cartoon-Selection")
@@ -181,5 +181,5 @@ class GiftGuideApp:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = GiftGuideApp(root)
+    app = CartoonSelection(root)
     root.mainloop()
