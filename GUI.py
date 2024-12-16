@@ -153,6 +153,7 @@ class GiftGuideApp:
     def show_message(self, title, message):
         """Wyświetla okienko z wiadomością."""
         top = tk.Toplevel(self.master)
+        top.geometry(f"+{self.master.winfo_screenwidth() // 2 - 200}+{self.master.winfo_screenheight() // 2 - 100}")
         top.title(title)
         top.config(bg="#fcfcfc", padx=10, pady=10)
 
