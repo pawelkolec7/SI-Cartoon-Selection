@@ -2,7 +2,6 @@ import tkinter as tk
 import clips
 import configparser
 
-
 class CartoonSelection:
     def __init__(self, master):
         self.master = master
