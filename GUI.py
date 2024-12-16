@@ -6,7 +6,7 @@ import configparser
 class GiftGuideApp:
     def __init__(self, master):
         self.master = master
-        self.master.title("Gift Guide")
+        self.master.title("SI-Cartoon-Selection")
         self.master.config(bg="#E1E8ED")
 
         # Ustawienie rozmiaru okna
