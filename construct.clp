@@ -5,13 +5,6 @@
    (multislot valid-answers)
    (slot state (default middle)))
 
-(deftemplate state-list
-   (slot current)
-   (multislot sequence))
-
-(deffacts startup
-   (state-list))
-
 (defrule system-start ""
   =>
   (assert (UI-state (display welcomeMessage)
