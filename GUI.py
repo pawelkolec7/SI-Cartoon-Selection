@@ -147,7 +147,7 @@ class CartoonSelection:
                 if "display" in part:
                     final_message = part.split("display")[1].strip().strip(" ()\"")
         final_message = self.config['DEFAULT'].get(final_message, "Nieznana odpowiedź")
-        self.show_message("Final Decision", final_message)
+        self.show_message("Selected Cartoon", final_message)
 
     def show_message(self, title, message):
         """Wyświetla okienko z wiadomością."""
@@ -156,8 +156,7 @@ class CartoonSelection:
         top.title(title)
         top.config(bg="#fcfcfc", padx=10, pady=10)
 
-        label = tk.Label(top, text=message, font=("Segoe UI", 14), padx=20, pady=20, bg="#fcfcfc",
-                         fg="#333333", wraplength=400)
+        label = tk.Label(top, text=message, font=("Segoe UI", 14), padx=20, pady=20, bg="#fcfcfc", fg="#333333", wraplength=400)
         label.pack(pady=(10, 10))
 
         button = tk.Button(
