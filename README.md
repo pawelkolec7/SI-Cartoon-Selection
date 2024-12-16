@@ -7,5 +7,5 @@
 
 ## Wersje:
 - Python 3.12.7
-- Clips 1.0.4
+- Clipspy 1.0.4
 - Tkinter 8.6
