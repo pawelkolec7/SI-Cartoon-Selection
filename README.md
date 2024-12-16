@@ -1,5 +1,5 @@
 # SI - CartoonSelction
-![alt text](image.png)
+![alt text](image_new.png)
 
 # Autorzy:
 - Paweł Kolec 155873
