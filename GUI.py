@@ -121,7 +121,6 @@ class CartoonSelection:
         # Prześlij odpowiedź
         if fact_name:
             self.environment.assert_string(f"({fact_name} {answer})")
-            print(f"Fact asserted: ({fact_name} {answer})")
 
         # Uruchom CLIPS dla nowego stanu
         self.environment.run()
