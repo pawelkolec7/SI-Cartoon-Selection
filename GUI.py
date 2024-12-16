@@ -90,7 +90,7 @@ class CartoonSelection:
     def update_question_and_answers(self, question, answers):
         """Uaktualnia widok pytania i listę dostępnych odpowiedzi."""
         # Pobierz tekst pytania i odpowiedzi z pliku konfiguracyjnego
-        question_text = self.config['DEFAULT'].get(question, "Nieznane pytanie")
+        question_text = self.config['DEFAULT'].get(question, "Unknown question")
         valid_answers = [self.config['DEFAULT'].get(answer, answer) for answer in answers]
 
         # Wyświetl pytanie
@@ -145,7 +145,7 @@ class CartoonSelection:
             for part in fact_parts:
                 if "display" in part:
                     final_message = part.split("display")[1].strip().strip(" ()\"")
-        final_message = self.config['DEFAULT'].get(final_message, "Nieznana odpowiedź")
+        final_message = self.config['DEFAULT'].get(final_message, "Unknown answer")
         self.show_message("Selected Cartoon", final_message)
 
     def show_message(self, title, message):
