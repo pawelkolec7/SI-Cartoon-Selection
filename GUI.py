@@ -177,7 +177,6 @@ class CartoonSelection:
         self.environment.run()
         self.display_question()
 
-
 if __name__ == "__main__":
     root = tk.Tk()
     app = CartoonSelection(root)
